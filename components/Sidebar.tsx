@@ -1,11 +1,14 @@
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { GiTie } from 'react-icons/gi'
+import profile from '../public/images/Foto.jpg'
+import Image from 'next/image';
 
 const Sidebar = () => {
   return (
     <div>
       <img src='https://lh3.googleusercontent.com/a/AAcHTte1uVpe26T2fbfzbfkWIAOf1t6bIalMl7en3aStV5knNdW9Fw4genhnwyz2NP1uv5l_iYADu1yy9Z4jn2oKDzrGc8Y=s288-c-no' alt='user avatar' className='w-32 h-32 mx-auto rounded-full'/>
+      {/* <Image src='/../public/images/Foto.jpg' alt='user avatar' priority={true} width={70} height={70} className='mx-auto rounded-full'/> */}
         <h3 className='my-4 text-3xl font-medium tracking-wider font-kaushan'>
             <span className='text-green'>Daniel Andres Castaño Navarro</span>
         </h3>
