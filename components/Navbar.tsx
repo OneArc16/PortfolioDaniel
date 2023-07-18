@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-const NavItem = useRouter
+const NavItem:FunctionComponent <{
+        activeItem:string,
+        setActiveItem:Function,
+        name:string,
+        route:string
+}> = ({activeItem, name, route, setActiveItem}) => {
+        return (
+                activeItem !== name ? (
+                <Link href={route}>
+                        <span onClick={()=>setActiveItem(name)} className='hover:text-green'>{name}</span>    
+                </Link> 
+                ):null
+        )
+}
 
 const Navbar = () => {
   
@@ -18,30 +31,12 @@ const Navbar = () => {
   }, [])
   
     return (
-    <div>
-      <span className='font-bold text-green'>{activeItem}</span>
-      <div className='flex space-x-3 text-red-400 font-lg'>
-        {activeItem !== 'About' && (
-        <Link href='/'>
-            
-                <span onClick={()=>setActiveItem('About')}>About</span>
-            
-        </Link>
-        )}
-                {activeItem !== 'Projects' && (
-        <Link href='/projects'>
-            
-                <span onClick={()=>setActiveItem('Projects')}>Projects</span>
-            
-        </Link>
-        )}
-                {activeItem !== 'Resume' && (
-        <Link href='/resume'>
-            
-                <span onClick={()=>setActiveItem('Resume')}>Resume</span>
-            
-        </Link>
-        )}
+    <div className='flex justify-between px-5 py-3 my-3'>
+      <span className='text-xl font-bold border-b-4 text-green border-green md:text-2xl'>{activeItem}</span>
+      <div className='flex space-x-5 text-lg'>
+        <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='About' route='/' />
+        <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Projects' route='/projects' />
+        <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Resume' route='/resume' />
       </div>
     </div>
   )
