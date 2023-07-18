@@ -1,4 +1,4 @@
-import React from 'react'
+import { services } from "@/data"
 
 const index = () => {
   return (
