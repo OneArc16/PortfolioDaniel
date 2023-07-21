@@ -1,10 +1,11 @@
 import {RiComputerLine} from 'react-icons/ri'
-import { IService } from './type'
+import { IService, ISkill } from './type'
 import {FaServer} from 'react-icons/fa'
 import {AiOutlineAntDesign, AiOutlineApi} from 'react-icons/ai'
 import {MdDeveloperMode} from 'react-icons/md'
+import {BsCircleFill} from 'react-icons/bs'
 
-export const services:IService[] = [
+export const services: IService[] = [
     {
         title: "Frontend Development",
         about: "Poseo experiencia en <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>NextJS</b>, <b>ReactJS</b>, <b>JAVA</b>, <b>C#</b> y <b>NodeJS</b>",
@@ -40,4 +41,60 @@ export const services:IService[] = [
         about: "lore...",
         Icon: RiComputerLine,
     },
+]
+
+export const languages: ISkill[] = [
+    {
+        name: "Javascript",
+        level: "50%",
+        Icon: BsCircleFill,
+    },
+    {
+        name: "Java",
+        level: "30%",
+        Icon: BsCircleFill,
+    },
+    {
+        name: "C#",
+        level: "30%",
+        Icon: BsCircleFill,
+    },
+    {
+        name: "React",
+        level: "50%",
+        Icon: BsCircleFill,
+    },
+    {
+        name: "Next",
+        level: "50%",
+        Icon: BsCircleFill,
+    },
+    {
+        name: "Ruby",
+        level: "10%",
+        Icon: BsCircleFill,
+    }
+]
+
+export const tools: ISkill[] = [
+    {
+        name: "Git",
+        level: "60%",
+        Icon: BsCircleFill,
+    },
+    {
+        name: "Figma",
+        level: "60%",
+        Icon: BsCircleFill,
+    },
+    {
+        name: "Photoshop",
+        level: "20%",
+        Icon: BsCircleFill,
+    },
+    {
+        name: "illustrator",
+        level: "50%",
+        Icon: BsCircleFill,
+    }
 ]
