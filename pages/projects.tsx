@@ -1,4 +1,4 @@
-import React from 'react'
+import { projects } from "@/data"
 
 const Projects = () => {
   return (
@@ -9,7 +9,7 @@ const Projects = () => {
 
       <div>
         {
-          Projects
+          projects
         }
       </div>
     </div>
