@@ -1,5 +1,5 @@
 import {RiComputerLine} from 'react-icons/ri'
-import { IService, ISkill } from './type'
+import { IService, ISkill, IProject } from './type'
 import {FaServer} from 'react-icons/fa'
 import {AiOutlineAntDesign, AiOutlineApi} from 'react-icons/ai'
 import {MdDeveloperMode} from 'react-icons/md'
@@ -97,4 +97,25 @@ export const tools: ISkill[] = [
         level: "50%",
         Icon: BsCircleFill,
     }
+]
+
+export const projects: IProject[] = [
+    {
+        name: "MyPao",
+        description: "Pagina para mi novia",
+        image_path: "/images/projects/mypao.png",
+        deployed_url: "https://my-pao-tau.vercel.app/",
+        github_url: "https://github.com/OneArc16/MyPao",
+        category: ["html"],
+        key_techs: ["HTML", "CSS", "Bootstrap"],
+    },
+    {
+        name: "PortfolioDaniel",
+        description: "mi portafolio personal",
+        image_path: "",
+        deployed_url: "",
+        github_url: "https://github.com/OneArc16/PortfolioDaniel",
+        category: ["react", "next", "typescript"],
+        key_techs: ["next", "react", "tailwind", "typescript"],
+    },
 ]
