@@ -103,7 +103,7 @@ export const projects: IProject[] = [
     {
         name: "MyPao",
         description: "Pagina para mi novia",
-        image_path: "/public/images/MyPao.jpg",
+        image_path: "public\images\MyPao.jpg",
         deployed_url: "https://my-pao-tau.vercel.app/",
         github_url: "https://github.com/OneArc16/MyPao",
         category: ["html"],
