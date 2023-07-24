@@ -1,7 +1,6 @@
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { GiTie } from 'react-icons/gi'
-import profile from '../public/images/Foto.jpg'
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 
@@ -14,8 +13,8 @@ const Sidebar = () => {
 
   return (
     <div>
-      <img src='https://lh3.googleusercontent.com/a/AAcHTte1uVpe26T2fbfzbfkWIAOf1t6bIalMl7en3aStV5knNdW9Fw4genhnwyz2NP1uv5l_iYADu1yy9Z4jn2oKDzrGc8Y=s288-c-no' alt='avatar' className='w-32 h-32 mx-auto border rounded-full'/>
-      {/* <Image src='/../public/images/Foto.jpg' alt='user avatar' priority={true} width={70} height={70} className='mx-auto rounded-full'/> */}
+      {/* <img src='https://lh3.googleusercontent.com/a/AAcHTte1uVpe26T2fbfzbfkWIAOf1t6bIalMl7en3aStV5knNdW9Fw4genhnwyz2NP1uv5l_iYADu1yy9Z4jn2oKDzrGc8Y=s288-c-no' alt='avatar' className='w-32 h-32 mx-auto border rounded-full'/> */}
+      <Image src='https://d33wubrfki0l68.cloudfront.net/64becdd785ef220fe6b80296/c981fb9bce7acac16117/IMG_20230716_142011.jpg' alt='avatar' className='mx-auto border rounded-full' height="128" width="128" layout="intrinsic" quality="100" />
         <h3 className='my-4 text-3xl font-medium tracking-wider font-kaushan'>
             <span className='text-green'>Daniel Andres Castaño Navarro</span>
         </h3>

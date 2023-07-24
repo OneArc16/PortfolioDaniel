@@ -103,7 +103,7 @@ export const projects: IProject[] = [
     {
         name: "MyPao",
         description: "Pagina para mi novia",
-        image_path: "public\images\MyPao.jpg",
+        image_path: "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/64bede1671ac5400b3fd1505/screenshot_2023-07-24-20-25-22-0000.png",
         deployed_url: "https://my-pao-tau.vercel.app/",
         github_url: "https://github.com/OneArc16/MyPao",
         category: ["html"],
