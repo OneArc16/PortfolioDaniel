@@ -3,6 +3,8 @@ import ProjectsNavbar from "@/components/ProjectsNavbar"
 import { projects as projectData } from "@/data"
 import { Category } from "@/type"
 import { useState } from "react"
+import { motion } from "framer-motion"
+import { fadeInUp, stagger } from "@/animation"
 
 const Projects = () => {
 
@@ -26,16 +28,16 @@ const Projects = () => {
 
       <ProjectsNavbar handlerFilterCategory={handlerFilterCategory} active={active} />
 
-      <div className="relative grid grid-cols-12 gap-4 my-3">
+      <motion.div className="relative grid grid-cols-12 gap-4 my-3" variants={stagger} initial="initial" animate="animate">
 
         {
           projects.map(project => (
-            <div className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200">
-              <ProjectCard project={project} key={project.name} />
-            </div>
+            <motion.div className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200" variants={fadeInUp} key={project.name}>
+              <ProjectCard project={project} />
+            </motion.div>
           ))
         }
-      </div>
+      </motion.div>
     </div>
   )
 }

@@ -71,7 +71,7 @@ export const languages: ISkill[] = [
     },
     {
         name: "Ruby",
-        level: "10%",
+        level: "20%",
         Icon: BsCircleFill,
     }
 ]
@@ -89,7 +89,7 @@ export const tools: ISkill[] = [
     },
     {
         name: "Photoshop",
-        level: "20%",
+        level: "30%",
         Icon: BsCircleFill,
     },
     {
