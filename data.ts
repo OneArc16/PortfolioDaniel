@@ -110,6 +110,7 @@ export const projects: IProject[] = [
         // key_techs: ["HTML", "CSS", "Bootstrap"],
 
     {
+        id:1,
         name: "PortfolioDaniel",
         description: "mi portafolio personal",
         image_path: "",

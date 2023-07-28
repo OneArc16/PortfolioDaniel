@@ -14,12 +14,13 @@ const Sidebar = () => {
   return (
     <div>
       {/* <img src='https://lh3.googleusercontent.com/a/AAcHTte1uVpe26T2fbfzbfkWIAOf1t6bIalMl7en3aStV5knNdW9Fw4genhnwyz2NP1uv5l_iYADu1yy9Z4jn2oKDzrGc8Y=s288-c-no' alt='avatar' className='w-32 h-32 mx-auto border rounded-full'/> */}
-      <Image src='https://d33wubrfki0l68.cloudfront.net/64becdd785ef220fe6b80296/c981fb9bce7acac16117/IMG_20230716_142011.jpg' alt='avatar' className='mx-auto border rounded-full' height="128" width="128" layout="intrinsic" quality="100" />
+      <Image src='https://d33wubrfki0l68.cloudfront.net/64becdd785ef220fe6b80296/c981fb9bce7acac16117/IMG_20230716_142011.jpg' width={120}
+      height={120} alt='avatar' className='mx-auto border rounded-full' quality={80} />
         <h3 className='my-4 text-3xl font-medium tracking-wider font-kaushan'>
             <span className='text-green'>Daniel Andres Castaño Navarro</span>
         </h3>
         <p className='px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500'>Web Develper</p>
-        <a className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500' href='' download='name'><GiTie className='w-6 h-6'/>Download Resume</a>
+        <a className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500' href='/assets/Curriculum.pdf' download='Curriculum.pdf'><GiTie className='w-6 h-6'/>Download Curriculum</a>
         
         {/* Social Icon */}
         <div className='flex justify-around w-9/12 mx-auto my-5 text-green md:w-full'>
