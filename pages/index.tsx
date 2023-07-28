@@ -2,12 +2,12 @@ import { services } from "../data"
 import ServiceCard from "@/components/ServiceCard"
 import { GetServerSidePropsContext, GetStaticPropsContext } from "next"
 import { motion } from "framer-motion"
-import { fadeInUp, stagger } from "@/animation"
+import { fadeInUp, routeAnimation, stagger } from "@/animation"
 
 const index = () => {
   
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1">
+    <motion.div className="flex flex-col flex-grow px-6 pt-1" variants={routeAnimation} initial="initial" animate="animate" exit="exit">
       <h6 className="my-3 text-base font-medium">
         Actualmente estoy cursando la carrera universitaria Ingenieria en Sistemas
         en la Universidad Nacional Abierta y a Distancia (UNAD). Soy FrontEnd Devoloper Junior 
@@ -30,7 +30,7 @@ const index = () => {
           }
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
